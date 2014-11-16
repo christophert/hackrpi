@@ -31,8 +31,8 @@ $('#log-smoke').submit(function(e) {
 	e.preventDefault();
 	var now = new Date($.now());
 	now = now.getHours()+":"+now.getMinutes();
-	$("#submit").addClass('btn-success').removeClass('btn-primary');
+	$("#log-button").addClass('btn-success').removeClass('btn-primary');
 	// $("#submit").attr("disabled", "disabled");
 	// console.log("hmm");
-	$("#submit").attr("value", "You successfully took drugs at " + now + "!");
+	$("#log-button").attr("value", "You successfully took drugs at " + now + "!");
 });
