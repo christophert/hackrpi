@@ -11,7 +11,7 @@ $("#user-information").ready(function() {
 			$("#phone").html(r.phone);
 			$("#age").html(r.age);
 			$("#weight").html(r.weight);
-			$("#brand").html(r.brand);
+			$("#brand").html(r.brand.brandName);
 			$("#numDay").html(r.numDay);
 			$("#goal").html(r.goal);
 			$("#bedtime").html(r.bedtime);
