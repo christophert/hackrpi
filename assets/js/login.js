@@ -3,6 +3,10 @@ $('#signin').submit(function(e) {
 	e.preventDefault();
 	//package form data
 	var serializedData = $(this).serialize();
+	$('#successMessage').hide();
+	$('#successMessage').html('');
+	$('#errorMessage').hide();
+	$('#errorMessage').html('');
 	$.ajax({
 		type: "POST",
 		url: "/api/login.php",
