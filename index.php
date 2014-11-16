@@ -79,51 +79,15 @@ require($ASSET_PATH."/header.inc");
 			                threshold: null
 			            }
 			        },
-			
-			/*
-			 Load the data from the CSV file. This is the contents of the file:
-			 
-				Apples,Pears,Oranges,Bananas,Plums
-				John,8,4,6,5
-				Jane,3,4,2,3
-				Joe,86,76,79,77
-				Janet,3,16,13,15
-				
-			 */ 
-			$.get('data.csv', function(data) {
-				// Split the lines
-				var lines = data.split('\n');
-				$.each(lines, function(lineNo, line) {
-					var items = line.split(',');
-					
-					// header line containes categories
-					if (lineNo == 0) {
-						$.each(items, function(itemNo, item) {
-							if (itemNo > 0) options.xAxis.categories.push(item);
-						});
-					}
-					
-					// the rest of the lines contain data with their name in the first position
-					else {
-						var series = { 
-							data: []
-						};
-						$.each(items, function(itemNo, item) {
-							if (itemNo == 0) {
-								series.name = item;
-							} else {
-								series.data.push(parseFloat(item));
-							}
-						});
-						
-						options.series.push(series);
-					}
-					
+					series: [{
+		           		type: 'area',
+		            	name: 'USD to EUR',
+		            	pointInterval: 24 * 3600 * 1000,
+		            	pointStart: Date.UTC(2006, 0, 1),
+		            	data: [18,19,18,17,17,17,16,15,15,15,14,14,14,16,17,15,14,14,13,13,13,12,12,12,12,11,11,10]
+		            }]
 				});
-				
-				var chart = new Highcharts.Chart(options);
 			});
-		});
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>	
 	<script src="http://code.highcharts.com/highcharts.js"></script>
