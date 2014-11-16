@@ -5,13 +5,14 @@ if(!isset($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
 session_start();
-if(!isset($_SESSION['userId']) && ($page != 99 || $page != 98)) {
-	header('Location: /login.php?redir='.urlencode($_SERVER['REQUEST_URI']));
+if(!isset($skipauth)) {
+  if(!isset($_SESSION['userId']) && $page != 99) {
+  	header('Location: /login.php?redir='.urlencode($_SERVER['REQUEST_URI']));
+  }
+  elseif(isset($_SESSION['userId']) && $page == 99) {
+    header('Location: /');
+  }
 }
-elseif(isset($_SESSION['userId']) && $page == 99) {
-  header('Location: /');
-}
-
 switch ($page) {
 	case 0:
 		$title = "Home";

@@ -2,6 +2,7 @@
 //license.php
 $ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
 $page = 98;
+$skipauth = true;
 require($ASSET_PATH."/header.inc");
 ?>
 		<div class="container">
