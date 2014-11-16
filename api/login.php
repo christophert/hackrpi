@@ -14,6 +14,6 @@ else {
 	if(empty($_POST['redir']))
 		header('Location: /');
 	else
-		header('Location: /'.urlencode($_POST['redir']));
+		header('Location: /'.urldecode($_POST['redir']));
 }
 ?>
