@@ -36,3 +36,4 @@ switch ($page) {
     <![endif]-->
   </head>
   <body>
+  var_dump($_SESSION);
