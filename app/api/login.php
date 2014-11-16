@@ -1,6 +1,6 @@
 <?php
 //login api
-$FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/app/assets/php/func.inc";
+$FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/assets/php/func.inc";
 require($FUNCPATH);
 if(empty($_POST['email']) || empty($_POST['password'])) {
 	die("<p>Generaal Error</p>");
@@ -12,7 +12,7 @@ else {
 	$_SESSION['lastName'] = "Smith";
 	$_SESSION['userId'] = 1;
 	if(empty($_POST['redir']))
-		header('Location: /app');
+		header('Location: /');
 	else
 		header('Location: /'.urlencode($_POST['redir']));
 }
