@@ -1,5 +1,6 @@
 <?php
 //header.inc
+$ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
 if(empty($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
@@ -36,3 +37,6 @@ switch ($page) {
     <![endif]-->
   </head>
   <body>
+<?php
+include($ASSET_PATH."/nav.inc");
+?>
