@@ -2,7 +2,7 @@
 //login api
 $FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/app/assets/php/func.inc";
 require($FUNCPATH);
-
+var_dump($_POST);
 if(empty($_POST['email']) || empty($_POST['password'])) {
 	die("<p>General Error</p>");
 }
