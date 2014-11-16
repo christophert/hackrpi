@@ -6,7 +6,7 @@ if(!isset($page)) {
 	<div id="footer">		
 		<div class="container">
 			<small id="commit">Commit <?php echo substr(`git rev-parse --verify HEAD`,0,7); ?></small>
-			<small>Built by <a href="http://chris.tran.pw">Christopher Tran</a> and <a href="#">Anmol Modur</a> for HackRPI. | <a href="#">codeRIT</a> 2014</small>
+			<small>Built by <a href="http://chris.tran.pw">Christopher Tran</a> and <a href="#">Anmol Modur</a> for HackRPI Fall 2014. | Copyright 2014 TranIT. <a href="/license.php">NicoQuit License</a></small>
 		</div>
 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
