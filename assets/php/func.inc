@@ -63,6 +63,12 @@ class progDB {
 		$response = $query->fetch(PDO::FETCH_ASSOC);
 		return $response;
 	}
+
+	public function getAllBrands() {
+		$query = $this->db->prepare('SELECT * FROM brands');
+		$query->execute();
+		return $query->fetch(PDO::FETCH_ASSOC);
+	}
 }
 
 class proLogin {

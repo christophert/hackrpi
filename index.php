@@ -21,12 +21,23 @@ require($ASSET_PATH."/header.inc");
 		    	<div id="myTabContent" class="tab-content">
 		      		<div role="tabpanel" class="tab-pane fade in active" id="profile" aria-labelledBy="profile-tab">
 		      			<div class="page-header"><h1>Your Profile</h1></div>
-		        		
+		      			<div class="successMessage" id="successMessage"></div>
+						<div class="errorMessage" id="errorMessage"></div>
+		      			<div id="user-information">
+		      				<label>Name: </label><span id="name"></span>
+		      				<label>Email: </label><span id="email"></span>
+		      				<label>Phone Number: </label><span id="phone"></span>
+		      				<label>Age: </label><span id="age"></span>
+		      				<label>Weight: </label><span id="weight"></span>
+		      				<label>Brand of Cigarette: </label><span id="brand"></span>
+		      				<label>Smokes a day: </label><span id="numDay"></span>
+		      				<label>Program Length: </label><span id="goal"></span>
+		      				<label>Bedtime: </label><span id="bedtime"></span>
 		     		</div>
 		        	<div role="tabpanel" class="tab-pane fade" id="progress" aria-labelledBy="progress-tab">
 		        		<div class="page-header"><h1>Your Progress</h1></div>
 		        		<center><div id="graph-container"><div id="graph"></div></div></center>
-		        		<p class="progress-info">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+						<p class="progress-info"></p>
 		       		</div>
 		    	</div>
 		    </div>
