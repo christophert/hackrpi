@@ -21,7 +21,7 @@ else {
 		$return['status'] = array('validated' => TRUE);
 		echo json_encode($return); 
 	}
-	else:
+	else
 		header("HTTP/1.1 404 User Not Found");
 }
 ?>
