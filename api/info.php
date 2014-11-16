@@ -3,6 +3,7 @@
 $FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/assets/php/func.inc";
 require($FUNCPATH);
 
+session_start();
 $workable = new progDB();
 $workable->setId($_SESSION['userId']);
 print($workable->getId());
