@@ -67,7 +67,8 @@ class progDB {
 
 class proLogin {
 	private $email;
-	private $sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
+	private $sqlpath;
+	$this->sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 	function __construct($connect = true) {
 		$this->results = array();
 
