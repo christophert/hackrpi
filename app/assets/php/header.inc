@@ -3,17 +3,19 @@
 if(empty($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
+session_start();
+if(!isset($_SESSION['userId']) && $page != 99) {
+	header('Location: /login.php?redir='.urlencode($_SERVER['REQUEST_URI']));
+}
 switch ($page) {
 	case 0:
-		$title = "Login";
-		break;
-	case 1:
 		$title = "Home";
 		break;
 	default:
 		$title = "undefined";
 		break;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
