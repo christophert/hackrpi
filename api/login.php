@@ -22,6 +22,6 @@ else {
 		echo json_encode($return); 
 	}
 	else
-		header("HTTP/1.1 404 User Not Found");
+		header("HTTP/1.1 404 Incorrect Email/Password. Please try again.");
 }
 ?>
