@@ -39,6 +39,18 @@ require($ASSET_PATH."/header.inc");
 		        		<div class="page-header"><h1>Your Progress</h1></div>
 		        		<center><div id="graph-container"><div id="graph"></div></div></center>
 						<p class="progress-info">Goal for tomorrow: 10 cigarettes</p>
+						<table class="table" id="statistics">
+							<thead>
+								<th>Most Frequent Smoking Time</th>
+								<th>Average Smokes per Day</th>
+								<th>Total Smokes</th>
+								<th>Money Spent</th>
+								<th>Money Saved</th>
+								<th>Cigarettes not smoked</th>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
 		       		</div>
 		    	</div>
 		    </div>
