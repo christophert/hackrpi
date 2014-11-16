@@ -10,7 +10,7 @@ if(!isset($page)) {
 	<script src="assets/js/graph.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="http://code.highcharts.com/modules/exporting.js"></script>
-	<?php if($page==1) { ?>
+	<?php if($page==0) { ?>
 	<script src="assets/js/info.js"></script>
 	<?php } ?>
 	<?php if($page==99) { ?>
