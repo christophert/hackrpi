@@ -18,6 +18,7 @@ $('#signin').submit(function(e) {
 			$("#successMessage").show();
 			if(r.status.validated) {
 				$("#successMessage").html("Logged in successfully! Redirecting to main page...");
+				window.location.replace("/");
 			}
 		},
 		error: function(xhr, textStatus, errorThrown) {
