@@ -32,6 +32,7 @@ switch ($page) {
 
     <!-- Bootstrap -->
     <link href="assets/css/app.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
