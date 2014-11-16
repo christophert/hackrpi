@@ -69,6 +69,12 @@ class progDB {
 		$query->execute();
 		return $query->fetch(PDO::FETCH_ASSOC);
 	}
+
+	public function getStatistics() {
+		$query = $this->db->prepare('SELECT * FROM usage');
+		$query->execute();
+		return $query->fetch(PDO::FETCH_ASSOC);
+	}
 }
 
 class proLogin {
