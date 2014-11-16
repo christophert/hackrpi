@@ -8,10 +8,10 @@ require($ASSET_PATH."/header.inc");
 			<div class="main-view">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 		      		<li role="presentation" class="active">
-		      			<a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Home</a>
+		      			<a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Profile</a>
 		      		</li>
 		      		<li role="presentation">
-		      			<a href="#goal" role="tab" id="goal-tab" data-toggle="tab" aria-controls="goal">Profile</a>
+		      			<a href="#goal" role="tab" id="goal-tab" data-toggle="tab" aria-controls="goal">Goal</a>
 		      		</li>
 		   		</ul>
 		    	<div id="myTabContent" class="tab-content">
