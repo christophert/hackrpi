@@ -8,6 +8,10 @@ session_start();
 if(!isset($_SESSION['userId']) && $page != 99) {
 	header('Location: /login.php?redir='.urlencode($_SERVER['REQUEST_URI']));
 }
+elseif(isset($_SESSION['userId']) && $page == 99) {
+  header('Location: /');
+}
+
 switch ($page) {
 	case 0:
 		$title = "Home";
