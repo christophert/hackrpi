@@ -5,7 +5,8 @@ require($ASSET_PATH."/header.inc");
 ?>
 	<div class="body-container">	
 		<div class="wrapper">
-			<div class="days-left"><h1>DAY </h1><p id="get-day"></p></div>
+			<div class="days-left float">
+				<p>DAY </p><p class="float" id="get-day"></p></div>
 			<div class="main-view">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 		      		<li role="presentation" class="active">
