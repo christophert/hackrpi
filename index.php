@@ -20,7 +20,7 @@ require($ASSET_PATH."/header.inc");
 		   		</ul>
 		    	<div id="myTabContent" class="tab-content">
 		      		<div role="tabpanel" class="tab-pane fade in active" id="profile" aria-labelledBy="profile-tab">
-		      			<div class="page-header"><h1>Your Profile</h1></div>
+		      			<div class="page-header"><button type="button" id="edit-profile" aria-label="Edit"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><h1>Your Profile</h1></div>
 		      			<div class="successMessage" id="successMessage"></div>
 						<div class="errorMessage" id="errorMessage"></div>
 		      			<div id="user-information">
