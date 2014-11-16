@@ -33,6 +33,7 @@ require($ASSET_PATH."/header.inc");
 		      				<label>Smokes a day: </label><span id="numDay"></span><br>
 		      				<label>Program Length: </label><span id="goal"></span><br>
 		      				<label>Bedtime: </label><span id="bedtime"></span>
+		      			</div>
 		     		</div>
 		        	<div role="tabpanel" class="tab-pane fade" id="progress" aria-labelledBy="progress-tab">
 		        		<div class="page-header"><h1>Your Progress</h1></div>
