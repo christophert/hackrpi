@@ -24,14 +24,14 @@ require($ASSET_PATH."/header.inc");
 		      			<div class="successMessage" id="successMessage"></div>
 						<div class="errorMessage" id="errorMessage"></div>
 		      			<div id="user-information">
-		      				<label>Name: </label><span id="name"></span>
-		      				<label>Email: </label><span id="email"></span>
-		      				<label>Phone Number: </label><span id="phone"></span>
-		      				<label>Age: </label><span id="age"></span>
-		      				<label>Weight: </label><span id="weight"></span>
-		      				<label>Brand of Cigarette: </label><span id="brand"></span>
-		      				<label>Smokes a day: </label><span id="numDay"></span>
-		      				<label>Program Length: </label><span id="goal"></span>
+		      				<label>Name: </label><span id="name"></span><br>
+		      				<label>Email: </label><span id="email"></span><br>
+		      				<label>Phone Number: </label><span id="phone"></span><br>
+		      				<label>Age: </label><span id="age"></span><br>
+		      				<label>Weight: </label><span id="weight"></span><br>
+		      				<label>Brand of Cigarette: </label><span id="brand"></span><br>
+		      				<label>Smokes a day: </label><span id="numDay"></span><br>
+		      				<label>Program Length: </label><span id="goal"></span><br>
 		      				<label>Bedtime: </label><span id="bedtime"></span>
 		     		</div>
 		        	<div role="tabpanel" class="tab-pane fade" id="progress" aria-labelledBy="progress-tab">
