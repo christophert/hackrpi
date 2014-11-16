@@ -17,7 +17,7 @@ switch ($page) {
 		$title = "Home";
 		break;
 	default:
-		$title = "undefined";
+		$title = "Login";
 		break;
 }
 
