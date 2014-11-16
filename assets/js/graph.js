@@ -4,7 +4,7 @@ $(function() {
             zoomType: 'x'
         },
         title: {
-            text: 'Cigaretts used per day'
+            text: 'Cigarettes used per day'
         },
         subtitle: {
             text: document.ontouchstart === undefined ?
@@ -16,7 +16,7 @@ $(function() {
         },
         yAxis: {
             title: {
-                text: 'Cigaretts'
+                text: 'Cigarettes'
             }
         },
         legend: {
@@ -51,7 +51,7 @@ $(function() {
 
         series: [{
             type: 'area',
-            name: 'Cigaretts',
+            name: 'Cigarettes',
             pointInterval: 24 * 3600 * 1000,
             pointStart: Date.UTC(2014, 10, 1),
             data: [
