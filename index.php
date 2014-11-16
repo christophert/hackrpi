@@ -1,6 +1,6 @@
 <?php
 $ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
-$page = 1;
+$page = 0;
 require($ASSET_PATH."/header.inc");
 ?>
 	<div class="body-container">	
