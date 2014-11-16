@@ -11,5 +11,9 @@ if(empty($page)) {
 	<script src="assets/js/graph.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<?php if($page==99) { ?>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/path.js/0.8.4/path.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.0.0/jquery.serialize-object.compiled.js"></script>
+	<?php } ?>
   </body>
 </html>
