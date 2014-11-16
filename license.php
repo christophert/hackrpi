@@ -1,7 +1,7 @@
 <?php
 //license.php
 $ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
-$page = 0;
+$page = 98;
 require($ASSET_PATH."/header.inc");
 ?>
 		<div class="container">
