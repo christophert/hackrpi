@@ -16,7 +16,7 @@ $("#user-information").ready(function() {
 			$("#numDay").html(r.numDay);
 			$("#goal").html(r.goal);
 			$("#bedtime").html(r.bedtime);
-			$("#statistics").append("<tr><td>"+r.statistics.populartime+"</td><td>"+r.statistics.avgSmokesDay+"</td><td>"+r.statistics.totalSmokesMonth+"</td><td>"+r.statistics.moneySpent+"</td><td>"+r.statistics.moneySaved+"</td><td>"+r.statistics.cigarettesNotSmoked+"</td></tr>");
+			$("#statistics").append("<tr><td>"+r.statistics.populartime+"</td><td>"+r.statistics.avgSmokesDay+"</td><td>"+r.statistics.totalSmokesMonth+"</td><td>$"+r.statistics.moneySpent+"</td><td>$"+r.statistics.moneySaved+"</td><td>"+r.statistics.cigarettesNotSmoked+"</td></tr>");
 		},
 		error: function(xhs, textStatus, errorThrown) {
 			if(xhr.status === 404) {
