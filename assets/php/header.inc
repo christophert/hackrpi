@@ -1,7 +1,7 @@
 <?php
 //header.inc
 $ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
-if(isset($page)) {
+if(!isset($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
 session_start();
