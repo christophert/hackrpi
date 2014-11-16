@@ -33,6 +33,9 @@ require($ASSET_PATH."/header.inc");
 	<script>
 		document.getElementById("get-day").innerHTML = "28";
 	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>	
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+
 <?php
 require($ASSET_PATH."/footer.inc");
 ?>
