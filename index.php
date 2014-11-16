@@ -20,7 +20,7 @@ require($ASSET_PATH."/header.inc");
 		    	<div id="myTabContent" class="tab-content">
 		      		<div role="tabpanel" class="tab-pane fade in active" id="profile" aria-labelledBy="profile-tab">
 		      			<div class="page-header"><h1>your profile</h1></div>
-		        		<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+		        		
 		     		</div>
 		        	<div role="tabpanel" class="tab-pane fade" id="progress" aria-labelledBy="progress-tab">
 		        		<div class="page-header"><h1>your progress</h1></div>
