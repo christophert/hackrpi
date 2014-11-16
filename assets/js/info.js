@@ -27,7 +27,7 @@ $("#user-information").ready(function() {
 	})
 });
 
-$('#log-button').submit(function(e) {
+$('#log-smoke').submit(function(e) {
 	e.preventDefault();
 	var now = new Date($.now());
 	now = now.getHours()+":"+now.getMinutes();
