@@ -34,5 +34,5 @@ $('#log-smoke').submit(function(e) {
 	$("#log-button").addClass('btn-success').removeClass('btn-primary');
 	// $("#submit").attr("disabled", "disabled");
 	// console.log("hmm");
-	$("#log-button").attr("value", "You successfully took drugs at " + now + "!");
+	$("#log-button").html("You successfully took drugs at " + now + "!");
 });
