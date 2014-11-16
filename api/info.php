@@ -10,6 +10,7 @@ $response = $workable->getUserInfo();
 if($response !== NULL) {
 	header("Content-Type: application/json");
 	$response['brand'] = $workable->getBrandInformation();
+	$response['statistics'] = $workable->getStatistics();
 	echo json_encode($response);
 }
 else
