@@ -27,11 +27,11 @@ require($ASSET_PATH."/header.inc");
 		      				<label>Name: </label> <span id="name"></span><br>
 		      				<label>Email: </label> <span id="email"></span><br>
 		      				<label>Phone Number: </label> <span id="phone"></span><br>
-		      				<label>Age: </label> <span id="age"></span><br> years old
-		      				<label>Weight: </label> <span id="weight"></span><br>lbs.
+		      				<label>Age: </label> <span id="age"></span> years old<br>
+		      				<label>Weight: </label> <span id="weight"></span> lbs.<br>
 		      				<label>Brand of Cigarette: </label> <span id="brand"></span> at <span id="nicAmt"></span>mg of nicotine per cigarette.<br>
 		      				<label>Smokes a day: </label> <span id="numDay"></span><br>
-		      				<label>Program Length: </label> <span id="goal"></span><br> days
+		      				<label>Program Length: </label> <span id="goal"></span> days<br>
 		      				<label>Bedtime: </label> <span id="bedtime"></span> hours
 		      			</div>
 		     		</div>
