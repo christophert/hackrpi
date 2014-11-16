@@ -8,7 +8,7 @@ require($ASSET_PATH."/header.inc");
 			<center><div class="days-left">
 				<p>DAY <span>28</span></p>
 			</div></center>
-			<center><button id="log-button" type="button">Log Smoke</button></center>
+			<button id="log-button" type="submit">Log Smoke</button></center>
 			<div class="main-view">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 		      		<li role="presentation" class="active">
