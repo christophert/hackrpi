@@ -1,5 +1,5 @@
 <?php
-if(empty($page)) {
+if(isset($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
 ?>
