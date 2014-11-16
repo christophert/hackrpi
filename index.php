@@ -5,12 +5,13 @@ require($ASSET_PATH."/header.inc");
 ?>
 	<div class="body-container">	
 		<div class="wrapper">
-			<div class="days-left float">
-				<p class="float">DAY </p><p class="float" id="get-day"></p></div>
+			<div class="days-left">
+				<p>DAY <span id="get-day"></span></p>
+			</div>
 			<div class="main-view">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 		      		<li role="presentation" class="active">
-		      			<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a>
+		      			<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Profile</a>
 		      		</li>
 		      		<li role="presentation">
 		      			<a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a>
