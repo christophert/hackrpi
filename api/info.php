@@ -6,10 +6,10 @@ require($FUNCPATH);
 session_start();
 $workable = new progDB();
 $workable->setId($_SESSION['userId']);
-print($workable->getId());
 $response = $workable->getUserInfo();
 if($response !== NULL) {
 	header("Content-Type: application/json");
+	$response['brand'] = $workable->getBrandInformation();
 	echo json_encode($response);
 }
 else
