@@ -3,7 +3,7 @@
 $FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/app/assets/php/func.inc";
 require($FUNCPATH);
 if(empty($_POST['email']) || empty($_POST['password'])) {
-	die("<p>General Error</p>");
+	die("<p>Generaal Error</p>");
 }
 else {
 	session_start();
