@@ -7,10 +7,21 @@ if(empty($_POST['email']) || empty($_POST['password'])) {
 }
 else {
 	session_start();
-	//not secure at all
-	$_SESSION['firstName'] = "John";
-	$_SESSION['lastName'] = "Smith";
-	$_SESSION['userId'] = 1;
-	header('Location: /');
+	$workable = new proLogin();
+	$workable->setId($_POST['email']);
+	$response = $workable->getUserInfo();
+	if($response !== NULL) {
+		//not secure at all
+		$_SESSION['firstName'] = $response['firstName'];
+		$_SESSION['lastName'] = $response['lastName'];
+		$_SESSION['userId'] = $response['id'];
+		header("Content-Type: application/json");
+		$return = array();
+		$return['userId'] = $response['id'];
+		$return['status'] = array('validated' => TRUE);
+		echo json_encode($return); 
+	}
+	else:
+		header("HTTP/1.1 404 User Not Found");
 }
 ?>

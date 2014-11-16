@@ -65,7 +65,7 @@ class progDB {
 }
 
 class proLogin {
-	private $id;
+	private $email;
 	private $sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 	function __construct($connect = true) {
 		$this->results = array();
@@ -92,20 +92,20 @@ class proLogin {
 		}
 	}
 
-	public function setId($inputId) {
-		$this->id = $inputId;
+	public function setId($inputEmail) {
+		$this->email = $inputEmail;
 	}
 
-	public function userExists() {
+	public function getUserInfo() { #return response or null dependent of record exist
 		$query = $this->db->prepare('SELECT * FROM users WHERE email=:email');
-		$query->bindParam(':email',$this->id,PDO::PARAM_STR);
+		$query->bindParam(':email',$this->email,PDO::PARAM_STR);
 		$query->execute();
 		$response = $query->fetch(PDO::FETCH_ASSOC);
-		if($response['email'])
-			return true;
+		if($response['email']) {
+			return $response;
+		}
 		else
-			return false;
+			return NULL;
 	}
-
 }
 ?>
