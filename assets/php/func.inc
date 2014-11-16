@@ -73,7 +73,7 @@ class proLogin {
 		$this->sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 
 		if (!file_exists($_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3"))
-			throw new Exception('SQLite Error: FIle was not found.');
+			throw new Exception('SQLite Error: File was not found.'.$_SERVER['DOCUMENT_ROOT']);
 
 		if($connect) {
 			$this->connect();
