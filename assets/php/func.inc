@@ -3,9 +3,9 @@
 class progDB {
 	private $id;
 	private $sqlpath;
-	$sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 	function __construct($connect = true) {
 		$this->results = array();
+		$this->sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 
 		if (!file_exists($_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3"))
 			throw new Exception('SQLite Error: FIle was not found.');
