@@ -2,7 +2,8 @@
 
 class progDB {
 	private $id;
-	private $sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
+	private $sqlpath;
+	$sqlpath = $_SERVER['DOCUMENT_ROOT']."../db/program.sqlite3";
 	function __construct($connect = true) {
 		$this->results = array();
 
