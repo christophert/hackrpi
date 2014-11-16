@@ -3,6 +3,12 @@ if(!isset($page)) {
 	die("<p>Direct access not permitted.</p>");
 }
 ?>
+	<div id="footer">		
+		<div class="container">
+			<small id="commit">Commit <?php echo substr(`git rev-parse --verify HEAD`,0,7); ?></small>
+			<small>Built by <a href="http://chris.tran.pw">Christopher Tran</a> for FCAHS. | Copyright &copy; 2014 TranIT.</small>
+		</div>
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
