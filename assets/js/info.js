@@ -12,6 +12,7 @@ $("#user-information").ready(function() {
 			$("#age").html(r.age);
 			$("#weight").html(r.weight);
 			$("#brand").html(r.brand.brandName);
+			$("#nicAmt").html(r.brand.nicotineAmt);
 			$("#numDay").html(r.numDay);
 			$("#goal").html(r.goal);
 			$("#bedtime").html(r.bedtime);

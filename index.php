@@ -29,7 +29,7 @@ require($ASSET_PATH."/header.inc");
 		      				<label>Phone Number: </label><span id="phone"></span><br>
 		      				<label>Age: </label><span id="age"></span><br>
 		      				<label>Weight: </label><span id="weight"></span><br>
-		      				<label>Brand of Cigarette: </label><span id="brand"></span><br>
+		      				<label>Brand of Cigarette: </label><span id="brand"></span> at <span id="nicAmt"></span> per cigarette.<br>
 		      				<label>Smokes a day: </label><span id="numDay"></span><br>
 		      				<label>Program Length: </label><span id="goal"></span><br>
 		      				<label>Bedtime: </label><span id="bedtime"></span>
