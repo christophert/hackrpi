@@ -11,9 +11,6 @@ else {
 	$_SESSION['firstName'] = "John";
 	$_SESSION['lastName'] = "Smith";
 	$_SESSION['userId'] = 1;
-	if(empty($_POST['redir']))
-		header('Location: /');
-	else
-		header('Location: /'.urldecode($_POST['redir']));
+	header('Location: /');
 }
 ?>
