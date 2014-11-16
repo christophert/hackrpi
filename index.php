@@ -5,10 +5,10 @@ require($ASSET_PATH."/header.inc");
 ?>
 	<div class="body-container">	
 		<div class="wrapper">
-			<div class="days-left">
+			<center><div class="days-left">
 				<p>DAY <span>28</span></p>
-			</div>
-			<button type="button">Click Me!</button>
+			</div></center>
+			<center><button type="button">Click Me!</button></center>
 			<div class="main-view">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 		      		<li role="presentation" class="active">
