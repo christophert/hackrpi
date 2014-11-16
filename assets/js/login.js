@@ -18,7 +18,9 @@ $('#signin').submit(function(e) {
 			$("#successMessage").show();
 			if(r.status.validated) {
 				$("#successMessage").html("Logged in successfully! Redirecting to main page...");
-				window.location.replace("/");
+				setTimeout(function () {
+					window.location.replace("/");
+				}, 2000);
 			}
 		},
 		error: function(xhr, textStatus, errorThrown) {
