@@ -24,21 +24,21 @@ require($ASSET_PATH."/header.inc");
 		      			<div class="successMessage" id="successMessage"></div>
 						<div class="errorMessage" id="errorMessage"></div>
 		      			<div id="user-information">
-		      				<label>Name: </label><span id="name"></span><br>
-		      				<label>Email: </label><span id="email"></span><br>
-		      				<label>Phone Number: </label><span id="phone"></span><br>
-		      				<label>Age: </label><span id="age"></span><br>
-		      				<label>Weight: </label><span id="weight"></span><br>
-		      				<label>Brand of Cigarette: </label><span id="brand"></span> at <span id="nicAmt"></span>mg of nicotine per cigarette.<br>
-		      				<label>Smokes a day: </label><span id="numDay"></span><br>
-		      				<label>Program Length: </label><span id="goal"></span><br>
-		      				<label>Bedtime: </label><span id="bedtime"></span>
+		      				<label>Name: </label> <span id="name"></span><br>
+		      				<label>Email: </label> <span id="email"></span><br>
+		      				<label>Phone Number: </label> <span id="phone"></span><br>
+		      				<label>Age: </label> <span id="age"></span><br> years old
+		      				<label>Weight: </label> <span id="weight"></span><br>lbs.
+		      				<label>Brand of Cigarette: </label> <span id="brand"></span> at <span id="nicAmt"></span>mg of nicotine per cigarette.<br>
+		      				<label>Smokes a day: </label> <span id="numDay"></span><br>
+		      				<label>Program Length: </label> <span id="goal"></span><br> days
+		      				<label>Bedtime: </label> <span id="bedtime"></span> hours
 		      			</div>
 		     		</div>
 		        	<div role="tabpanel" class="tab-pane fade" id="progress" aria-labelledBy="progress-tab">
 		        		<div class="page-header"><h1>Your Progress</h1></div>
 		        		<center><div id="graph-container"><div id="graph"></div></div></center>
-						<p class="progress-info"></p>
+						<p class="progress-info">Goal for tomorrow: 10 cigarettes</p>
 		       		</div>
 		    	</div>
 		    </div>
