@@ -2,8 +2,6 @@
 //info api
 $FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/assets/php/func.inc";
 require($FUNCPATH);
-if(!isset($page))
-	die("<p>Direct access not allowed</p>");
 
 $workable = new progDB();
 $workable->setId($_SESSION['userId']);
@@ -15,4 +13,6 @@ if($response !== NULL) {
 }
 else
 	header("HTTP/1.1 404 Information Not Found");
+
+$workable = NULL;
 ?>
