@@ -1,98 +1,91 @@
 //custom.less
 //tran hackrpi 2014
-
 .body-container {
-	.container;
+    .container;
 }
-
 .wrapper {
-	.make-row();
-
-	margin:5px;
+    .make-row();
+    margin: 5px;
 }
-
 .days-left {
-	width: 100%;
-
-	p{
-		font-size:100px;
-	}
-	.pull-left;
+    width: 100%;
+    p {
+        font-size: 100px;
+    }
+    .pull-left;
 }
-
-.get-day {}
-
-.signin {
-	max-width: 330px;
-	padding: 15px;
-	margin: 0 auto;
-	.heading {
-		margin-bottom: 10px;
-	}
-	.form-control {
-		position: relative;
-		font-size: 14px;
-		height: auto;
-		padding: 10px;
-	}
-	.form-control:focus {
-		z-index: 2;
-	}
-	input[type="email"] {
-		margin-bottom: -1px;
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	input[type="password"] {
-		margin-bottom: 10px;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
-	.login-button {
-		.btn;
-		.btn-lg;
-		.btn-primary;
-		.btn-block;
-	}
+.get-day {} .signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    .heading {
+        margin-bottom: 10px;
+    }
+    .form-control {
+        position: relative;
+        font-size: 14px;
+        height: auto;
+        padding: 10px;
+    }
+    .form-control:focus {
+        z-index: 2;
+    }
+    input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .login-button {
+        .btn;
+        .btn-lg;
+        .btn-primary;
+        .btn-block;
+    }
 }
-
 .header-container {
-	background-color: rgb(243,134,48);
+    background-color: rgb(243, 134, 48);
 }
-
 .header {
-	.container;
-	.nav {
-		.navbar;
-		.nav-pills;
-		.pull-right;
-		margin-top: 20px;
-	}
-	padding-bottom: 19px;
-	.brand {
-		color: #fff;
-		.subtext {
-			.text-muted;
-			font-size: 35%;
-		}
-		padding-top: 10px;
-	}
-	.signInInfo {
-		margin-top: 20px;
-		padding-top: 10px;
-		color: #fff;
-		.pull-right;
-	}
+    .container;
+    .nav {
+        .navbar;
+        .nav-pills;
+        .pull-right;
+        margin-top: 20px;
+    }
+    padding-bottom: 19px;
+    .brand {
+        color: #fff;
+        .subtext {
+            .text-muted;
+            font-size: 35%;
+        }
+        padding-top: 10px;
+    }
+    .signInInfo {
+        margin-top: 20px;
+        padding-top: 10px;
+        color: #fff;
+        .pull-right;
+    }
 }
-
 .go {
-	background-color: @brand-success;
+    background-color: @brand-success;
 }
-
 .stop {
-	background-color: @brand-danger;
+    background-color: @brand-danger;
 }
 .main-view {
-	.make-xs-column(12);
-	.make-md-column(12);
+    .make-xs-column(12);
+    .make-md-column(12);
+}
+#graph {
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto
 }
