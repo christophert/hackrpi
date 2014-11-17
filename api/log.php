@@ -20,8 +20,7 @@ if($workable->updateUserLog()) {
 	$response['status']['logged'] = true;
 	echo json_encode($response, JSON_PRETTY_PRINT);
 } else {
-	header("HTTP/1.1 510 Unable to Log")
+	header("HTTP/1.1 510 Unable to Log");
 	#$response['status']['logged'] = false;
-
 }
 ?>
