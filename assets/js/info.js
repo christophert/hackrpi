@@ -17,7 +17,9 @@ $("#user-information").ready(function() {
 			$("#goal").html(r.goal);
 			$("#bedtime").html(r.bedtime);
 			$("#statistics").append("<tr><td>"+r.statistics.populartime+"</td><td>"+r.statistics.avgSmokesDay+"</td><td>"+r.statistics.totalSmokesMonth+"</td><td>$"+r.statistics.moneySpent+"</td><td>$"+r.statistics.moneySaved+"</td><td>"+r.statistics.cigarettesNotSmoked+"</td></tr>");
-			$("#smokelog").append("<tr><td>"+humanTime(r.log.logtime)+"</td></tr>");
+			$.each(r.log, function(t) {
+				 $("#smokelog").prepend("<tr><td>"+humanTime(t.logtime)+"</td></tr>");
+			});
 		},
 		error: function(xhs, textStatus, errorThrown) {
 			if(xhr.status === 404) {
@@ -32,6 +34,7 @@ $('#log-smoke').submit(function(e) {
 	e.preventDefault();
 	var now = new Date($.now());
 	now = now.getHours()+":"+now.getMinutes();
+	var epoch = (new Date).getTime();
 	$.ajax({
 		type: "POST",
 		url: "/api/log.php",
@@ -42,7 +45,7 @@ $('#log-smoke').submit(function(e) {
 				$("#log-button").attr("disabled", "disabled");
 				// console.log("hmm");
 				$("#log-button").html("You successfully logged your smoke at " + now + "!");
-				$("#smokelog").append("<tr><td>"+humanTime(now)+"</td></tr>");
+				$("#smokelog").append("<tr><td>"+humanTime(epoch)+"</td></tr>");
 		},
 		error: function(xhs, textStatus, errorThrown) {
 			if(xhr.status === 510) {
