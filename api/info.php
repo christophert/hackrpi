@@ -11,6 +11,7 @@ if($response !== NULL) {
 	header("Content-Type: application/json");
 	$response['brand'] = $workable->getBrandInformation();
 	$response['statistics'] = $workable->getStatistics();
+	$response['log'] = $workable->getUsageLog();
 	echo json_encode($response);
 }
 else

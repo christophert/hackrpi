@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('America/New_York');
 class progDB {
 	private $id;
 	private $sqlpath;
@@ -62,6 +62,17 @@ class progDB {
 		$query->execute();
 		$response = $query->fetch(PDO::FETCH_ASSOC);
 		return $response;
+	}
+
+	public function getUserLog() {
+		$query = $this->db->prepare('SELECT * FROM log WHERE EXISTS (SELECT * FROM USERS WHERE usage.user = users.id) LIMIT 10')
+	}
+
+	public function updateUserLog() {
+		$query = $this->db->prepare('INSERT INTO log(user, logtime) VALUES (:uid,:logtime)');
+		$query->bindParam(':uid',$this->id,PDO::PARAM_INT);
+		$query->bindParam(':logtime',time(),PDO::PARAM_INT);
+		return $query->execute();
 	}
 
 	public function getAllBrands() {
