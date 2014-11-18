@@ -47,6 +47,7 @@ $('#log-smoke').submit(function(e) {
 				// console.log("hmm");
 				$("#log-button").html("You successfully logged your smoke at " + now + "!");
 				$("#smokelog").prepend("<tr><td>"+humanTime(epoch)+"</td></tr>");
+				$("#tmsk").html(parseInt($("#tmsk").html()) + 1);
 		},
 		error: function(xhs, textStatus, errorThrown) {
 			if(xhr.status === 510) {
