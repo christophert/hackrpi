@@ -35,6 +35,7 @@ $('#log-smoke').submit(function(e) {
 	var now = new Date($.now());
 	now = now.getHours()+":"+now.getMinutes();
 	var epoch = (new Date).getTime()/1000|0;
+	console.log(epoch);
 	$.ajax({
 		type: "POST",
 		url: "/api/log.php",
