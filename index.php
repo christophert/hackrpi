@@ -52,13 +52,15 @@ require($ASSET_PATH."/header.inc");
 							</tbody>
 						</table>
 
-						<table class="table" id="smokelog">
-							<thead>
-								<th>Last 10 Smokes Logged</th>
-							</thead>
-							<tbody>
-							</tbody>
-						</table>
+						<div class="smokearea">
+							<table class="table" id="smokelog">
+								<thead>
+									<th>Last 10 Smokes Logged</th>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
 		       		</div>
 		    	</div>
 		    </div>
