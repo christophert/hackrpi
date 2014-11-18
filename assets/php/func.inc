@@ -72,6 +72,7 @@ class progDB {
 				$response[] = array('logentry' => $r);
 			}
 		}
+		return $response;
 	}
 
 	public function updateUserLog() {
