@@ -4,7 +4,7 @@ $page = 99;
 $ASSET_PATH = $_SERVER['DOCUMENT_ROOT']."/assets/php";
 require($ASSET_PATH."/header.inc");
 ?>
-		<div class="container">
+		<div class="login-container">
 			<div class="jumbotron">
 				<h1>NicoQuit</h1>
 				<p>We are a service that assists current smokers that want to quit. The program helps you keep track of when you smoke and allows you slowly lean off of smoking to live a cleaner, better life.</p>
