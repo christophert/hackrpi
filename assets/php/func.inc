@@ -76,7 +76,7 @@ class progDB {
 	}
 
 	public function updateUserLog() {
-		$query = $this->db->prepare('INSERT INTO log(user, logtime) VALUES (:uid,:logtime); UPDATE users SET totalSmokesMonth = totalSmokesMonth + 1 WHERE id=:uid');
+		$query = $this->db->prepare('INSERT INTO log(user, logtime) VALUES (:uid,:logtime); UPDATE usage SET totalSmokesMonth = totalSmokesMonth + 1 WHERE id=:uid');
 		$query->bindParam(':uid',$this->id,PDO::PARAM_INT);
 		$query->bindParam(':logtime',time(),PDO::PARAM_INT);
 		return $query->execute();
