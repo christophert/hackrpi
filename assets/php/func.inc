@@ -70,6 +70,7 @@ class progDB {
 		if($query->execute()) {
 			while($r = $query->fetch(PDO::FETCH_ASSOC)) {
 				$response[] = array('logentry' => $r);
+			}
 		}
 	}
 
