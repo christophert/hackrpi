@@ -67,8 +67,10 @@ class progDB {
 	public function getUserLog() {
 		$query = $this->db->prepare('SELECT * FROM log WHERE EXISTS (SELECT * FROM USERS WHERE log.user = :uid) LIMIT 10');
 		$query->bindParam(':uid',$this->id,PDO::PARAM_INT);
-		$query->execute();
-		return $query->fetch(PDO::FETCH_ASSOC);
+		if($query->execute()) {
+			while($r = $query->fetch(PDO::FETCH_ASSOC)) {
+				$response[] = array('logentry' => $r);
+		}
 	}
 
 	public function updateUserLog() {

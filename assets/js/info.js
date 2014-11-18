@@ -17,8 +17,8 @@ $("#user-information").ready(function() {
 			$("#goal").html(r.goal);
 			$("#bedtime").html(r.bedtime);
 			$("#statistics").append("<tr><td>"+r.statistics.populartime+"</td><td>"+r.statistics.avgSmokesDay+"</td><td>"+r.statistics.totalSmokesMonth+"</td><td>$"+r.statistics.moneySpent+"</td><td>$"+r.statistics.moneySaved+"</td><td>"+r.statistics.cigarettesNotSmoked+"</td></tr>");
-			$.each(r.log, function(t) {
-				 $("#smokelog").prepend("<tr><td>"+humanTime(t.logtime)+"</td></tr>");
+			$.each(r.log, function(i, log) {
+				 $("#smokelog").prepend("<tr><td>"+humanTime(i.logentry.logtime)+"</td></tr>");
 			});
 		},
 		error: function(xhs, textStatus, errorThrown) {
