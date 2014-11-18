@@ -4,6 +4,7 @@
 $FUNCPATH = $_SERVER['DOCUMENT_ROOT']."/assets/php/func.inc";
 require($FUNCPATH);
 
+session_start();
 if(empty($_SESSION['userId'])) {
 	die("<p>Not Authenticated</p>");
 }
