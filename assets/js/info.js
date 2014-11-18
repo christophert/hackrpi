@@ -34,7 +34,7 @@ $('#log-smoke').submit(function(e) {
 	e.preventDefault();
 	var now = new Date($.now());
 	now = now.getHours()+":"+now.getMinutes();
-	var epoch = (new Date).getTime();
+	var epoch = (new Date).getTime()/1000|0;
 	$.ajax({
 		type: "POST",
 		url: "/api/log.php",
@@ -45,7 +45,7 @@ $('#log-smoke').submit(function(e) {
 				$("#log-button").attr("disabled", "disabled");
 				// console.log("hmm");
 				$("#log-button").html("You successfully logged your smoke at " + now + "!");
-				$("#smokelog").append("<tr><td>"+humanTime(epoch)+"</td></tr>");
+				$("#smokelog").prepend("<tr><td>"+humanTime(epoch)+"</td></tr>");
 		},
 		error: function(xhs, textStatus, errorThrown) {
 			if(xhr.status === 510) {
