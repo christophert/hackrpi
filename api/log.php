@@ -12,6 +12,8 @@ if(empty($_SESSION['userId'])) {
 //do log stuff
 //new obj
 $workable = new ProgDB();
+//set session
+$workable->setId($_SESSION['userId']);
 header("Content-Type: application/json");
 $response = array();
 $response['userId'] = $_SESSION['userId'];
